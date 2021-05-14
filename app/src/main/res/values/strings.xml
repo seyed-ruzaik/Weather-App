@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tutorial6</string>
+    <string name="sunny_text">Sunny</string>
+    <string name="city_text">City</string>
+    <string name="unit_text">C</string>
+    <string name="temp_text">30</string>
+    <string name="date_text">DATE</string>
+    <string name="sun_rise">Sun Rise</string>
+    <string name="sun_set">Sun Set</string>
+    <string name="enter_city_name_text">Enter City Name</string>
+    <string name="feels_like_text">Feels like</string>
+    <string name="see_historical_data_text">See historical data</string>
+</resources>

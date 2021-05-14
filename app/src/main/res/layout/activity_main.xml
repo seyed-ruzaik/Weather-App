@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="1dp"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="@string/date_text"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView_temp"
+        android:layout_width="170dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="224dp"
+        android:gravity="center"
+        android:text="@string/temp_text"
+        android:textAlignment="textStart"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView_city"
+        android:layout_width="193dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/city_text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="320dp"
+        android:gravity="center"
+        android:text="@string/sunny_text"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/textView_sunrise"
+        android:layout_width="159dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        android:text="@string/sun_rise"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_sunset"
+        android:layout_width="157dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="224dp"
+        android:gravity="center"
+        android:text="@string/sun_set"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_cityname"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="148dp"
+        android:background="@color/purple_500"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_city_name_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill" />
+
+    <ImageButton
+        android:id="@+id/btn_submit"
+        android:layout_width="161dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/greensearch"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView_feelslike"
+        android:layout_width="187dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="268dp"
+        android:gravity="center"
+        android:text="@string/feels_like_text"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="172dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/see_historical_data_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
